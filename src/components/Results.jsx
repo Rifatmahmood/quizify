@@ -1,5 +1,5 @@
 export default function Results() {
   return (
-    <div>Results</div>
+    <div className="underline">Results</div>
   )
 }
