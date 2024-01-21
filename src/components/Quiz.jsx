@@ -13,6 +13,7 @@ export default function Quiz({ selectedQuestions, submitQuiz }) {
           title={`${idx + 1}. ` + s.question}
           bordered={false}
           key={idx}
+          className='mb-2'
 
         >
 
@@ -40,6 +41,8 @@ export default function Quiz({ selectedQuestions, submitQuiz }) {
             submitQuiz(answers); 
           }
         }}
+
+        className={`mb-7 ${notAllAnswerd === false? 'bg-sky-500' : 'bg-transparent'}`}
         disabled={notAllAnswerd} block
         
       >Submit</Button>

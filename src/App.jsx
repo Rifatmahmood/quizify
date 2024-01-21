@@ -31,7 +31,11 @@ function App() {
           setAnswers(answers); 
           setView('results'); 
           } } />}
-        {view == 'results' && <Results />}
+        {view == 'results' && answers && <Results answers={answers} returnHome={() => {
+          setAnswers(null); 
+          setSelectedQuestions(null); 
+          setView('home'); 
+        }}/>}
 
       </div>
 
