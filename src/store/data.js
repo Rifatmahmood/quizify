@@ -243,10 +243,24 @@ const sportsQuestions = [
 
 
 export const categories = [
-  scienceAndNatureQuestions, 
-  generalKnowledgeQuestions, 
-  technologyAndComputersQuestions, 
-  moviesAndTVShowsQuestions,
-  sportsQuestions
-
+  {
+    category: "Science And Nature",
+    questions: scienceAndNatureQuestions
+  },
+  {
+    category: "General Knowledge",
+    questions: generalKnowledgeQuestions
+  },
+  {
+    category: "Technology And Computers",
+    questions: technologyAndComputersQuestions
+  },
+  {
+    category: "Movies And TVShows",
+    questions: moviesAndTVShowsQuestions
+  },
+  {
+    category: "Sports",
+    questions: sportsQuestions
+  }
 ];
